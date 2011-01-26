@@ -1,6 +1,5 @@
 #include "DisplayObject.h"
 
-
 DisplayObject::DisplayObject(void)
 {
 	x = 0.0f;

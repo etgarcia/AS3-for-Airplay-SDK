@@ -2,25 +2,27 @@
 files
 {
 	(source)
-	BitmapObject.cpp
-	BitmapObject.h
-	DisplayObject.cpp
-	DisplayObject.h
-	DisplayObjectContainer.cpp
-	DisplayObjectContainer.h
-	Engine.cpp
-	Engine.h
-	Event.cpp
-	Event.h
-	EventDispatcher.cpp
-	EventDispatcher.h
-	InteractiveObject.cpp
-	InteractiveObject.h
-	main.cpp
-	Sprite.cpp
-	Sprite.h
-	Stage.cpp
-	Stage.h
+BitmapObject.cpp
+BitmapObject.h
+DisplayObject.cpp
+DisplayObject.h
+DisplayObjectContainer.cpp
+DisplayObjectContainer.h
+Engine.cpp
+Engine.h
+Event.cpp
+Event.h
+EventDispatcher.cpp
+EventDispatcher.h
+InteractiveObject.cpp
+InteractiveObject.h
+main.cpp
+Sprite.cpp
+Sprite.h
+Stage.cpp
+Stage.h
+Timer.cpp
+Timer.h
 }
 
 subprojects

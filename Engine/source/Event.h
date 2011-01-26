@@ -3,6 +3,7 @@
 class Event
 {
 public:
-	Event(void);
+	Event(char* type);
 	~Event(void);
+	char* type;
 };

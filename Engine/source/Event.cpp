@@ -1,6 +1,7 @@
 #include "Event.h"
 
-Event::Event()
+Event::Event(char* type) :
+	type(type)
 {
 }
 

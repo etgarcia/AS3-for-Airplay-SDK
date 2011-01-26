@@ -13,6 +13,7 @@ DisplayObjectContainer::~DisplayObjectContainer(void)
 DisplayObject* DisplayObjectContainer::addChild(DisplayObject* child)
 {
 	children.push_back(child);
+	child->parent = this;
 	return child;
 }
 

@@ -1,6 +1,5 @@
 #pragma once
 #include "DisplayObjectContainer.h"
-#include "Iw2D.h"
 #include "Sprite.h"
 #include "BitmapObject.h"
 

@@ -1,5 +1,6 @@
 #pragma once
 #include "EventDispatcher.h"
+
 class DisplayObject :
 	public EventDispatcher
 {
@@ -11,7 +12,7 @@ public:
 	float z;
 	float width;
 	float height;
+	void* parent;
 
 	virtual void render();
 };
-

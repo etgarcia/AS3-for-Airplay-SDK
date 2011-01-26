@@ -1,6 +1,5 @@
 #pragma once
 #include "InteractiveObject.h"
-#include <vector>
 
 class DisplayObjectContainer :
 	public InteractiveObject

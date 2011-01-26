@@ -4,6 +4,7 @@ Stage::Stage() :
 	stageColor(0),
 	frameRate(24)
 {
+	stage = this;
 }
 
 
@@ -24,5 +25,5 @@ void Stage::render()
 
 float Stage::getMsPerFrame()
 {
-	return 1000 / frameRate;
+	return 1000 / (float)frameRate;
 }
