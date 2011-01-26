@@ -9,10 +9,10 @@ public:
 	EventDispatcher(void);
 	virtual ~EventDispatcher(void);
 	static void* stage;
-	void addEventListener(char* type, void* listener, bool useCapture = false, bool useWeakReference = false);
+	void addEventListener(char* type, void (*listener)(Event), bool useCapture = false, bool useWeakReference = false);
 	bool dispatchEvent(Event* evnt);
 	bool hasEventListener(char* type);
-	void removeEventListener(char* type, void* listener, bool useCapture = false);
+	void removeEventListener(char* type, void (*listener)(Event), bool useCapture = false);
 	void recieveEvent(Event* evnt);
 private:
 	std::vector<Event*> events;

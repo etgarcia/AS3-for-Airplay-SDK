@@ -1,10 +1,17 @@
 #include "Stage.h"
 
+void stageRender(Event evnt)
+{
+	Stage* stage = (Stage*)evnt.stage;
+	stage->render();
+}
+
 Stage::Stage() :
 	stageColor(0),
 	frameRate(24)
 {
 	stage = this;
+	addEventListener("timer", stageRender);
 }
 
 

@@ -10,7 +10,7 @@ EventDispatcher::~EventDispatcher(void)
 {
 }
 
-void EventDispatcher::addEventListener(char* type, void* listener, bool useCapture, bool useWeakReference)
+void EventDispatcher::addEventListener(char* type, void (*listener)(Event), bool useCapture, bool useWeakReference)
 {
 	events.push_back(new Event(type));
 	listeners.push_back(listener);
@@ -26,7 +26,7 @@ bool EventDispatcher::hasEventListener(char* type)
 	return true;
 }
 
-void EventDispatcher::removeEventListener(char* type, void* listener, bool useCapture)
+void EventDispatcher::removeEventListener(char* type, void (*listener)(Event), bool useCapture)
 {
 }
 
