@@ -1,0 +1,16 @@
+#!/usr/bin/env mkb
+files
+{
+	(source)
+	Learn.cpp
+}
+
+subprojects
+{
+	iw2d_lite
+}
+
+assets
+{
+	(data)
+}

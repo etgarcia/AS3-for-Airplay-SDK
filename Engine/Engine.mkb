@@ -1,0 +1,31 @@
+#!/usr/bin/env mkb
+files
+{
+	(source)
+	BitmapObject.cpp
+	BitmapObject.h
+	DisplayObject.cpp
+	DisplayObject.h
+	DisplayObjectContainer.cpp
+	DisplayObjectContainer.h
+	Engine.cpp
+	EventDispatcher.cpp
+	EventDispatcher.h
+	InteractiveObject.cpp
+	InteractiveObject.h
+	Sprite.cpp
+	Sprite.h
+	Stage.cpp
+	Stage.h
+}
+
+subprojects
+{
+	iw2d_lite
+}
+
+assets
+{
+	(data)
+	largeAirplayLogo.bmp
+}
