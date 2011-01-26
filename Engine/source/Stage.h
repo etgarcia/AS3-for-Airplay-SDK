@@ -8,10 +8,11 @@ class Stage :
 	public DisplayObjectContainer
 {
 public:
-	Stage(uint32 stageColor);
+	Stage();
 	~Stage(void);
 	void render();
+	float getMsPerFrame();
 protected:
 	uint32 stageColor;
+	uint16 frameRate;
 };
-

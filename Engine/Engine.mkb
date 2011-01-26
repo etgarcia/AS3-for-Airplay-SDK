@@ -9,10 +9,14 @@ files
 	DisplayObjectContainer.cpp
 	DisplayObjectContainer.h
 	Engine.cpp
+	Engine.h
+	Event.cpp
+	Event.h
 	EventDispatcher.cpp
 	EventDispatcher.h
 	InteractiveObject.cpp
 	InteractiveObject.h
+	main.cpp
 	Sprite.cpp
 	Sprite.h
 	Stage.cpp

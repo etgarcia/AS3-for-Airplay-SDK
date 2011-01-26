@@ -1,29 +1,15 @@
-#pragma once
-#include "Stage.h"
+#include "Engine.h"
 
-class Engine : public Stage
+Engine::Engine()
 {
-public:
-	Engine(uint32 stageColor);
-	~Engine(void);
-	void render();
-};
-
-Engine::Engine(uint32 stageColor)
-{
-	this->stageColor = stageColor;
-	Sprite* sprite = new Sprite();
+	stageColor = 0xFFFFFFFF;
+	frameRate = 30;
 	BitmapObject* bitmap = new BitmapObject("largeAirplayLogo.bmp");
+	Sprite* sprite = new Sprite();
 	sprite->addChild(bitmap);
 	this->addChild(sprite);
 }
 
 Engine::~Engine()
 {
-}
-
-void Engine::render()
-{
-	Iw2DSurfaceClear(stageColor);
-	DisplayObjectContainer::render();
 }

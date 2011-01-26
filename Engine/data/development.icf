@@ -154,7 +154,7 @@ SurfaceDisableWhenGLIsActive = 		Type=bool, Default="false", Value = "false"
 
 SurfaceDoubleBuffer = 		Type=bool, Default="false", Value = "false"
 
-SurfaceHeight = 		Type=int, Min=128.000000, Max=4096.000000, Default="480", Value = "768"
+SurfaceHeight = 		Type=int, Min=128.000000, Max=4096.000000, Default="480", Value = "480"
 
 SurfacePitch = 		Type=int, Min=0.000000, Max=8192.000000, Default="0", Value = "0"
 
@@ -168,7 +168,7 @@ SurfaceUnalign = 		Type=bool, Default="true", Value = "true"
 
 SurfaceUseMultiBuffers = 		Type=bool, Default="true", Value = "true"
 
-SurfaceWidth = 		Type=int, Min=128.000000, Max=4096.000000, Default="320", Value = "1024"
+SurfaceWidth = 		Type=int, Min=128.000000, Max=4096.000000, Default="320", Value = "320"
 
 TimerLocaltimeOffsetHours = 		Type=int, Min=-12.000000, Max=12.000000, Default="0", Value = "0"
 

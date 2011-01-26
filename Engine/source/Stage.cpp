@@ -1,10 +1,9 @@
 #include "Stage.h"
 
-Stage::Stage(uint32 stageColor) :
-	stageColor(stageColor)
+Stage::Stage() :
+	stageColor(0),
+	frameRate(24)
 {
-	BitmapObject* bitmap = new BitmapObject("largeAirplayLogo.bmp");
-	this->addChild(bitmap);
 }
 
 
@@ -20,4 +19,10 @@ void Stage::render()
 {
 	Iw2DSurfaceClear(stageColor);
 	DisplayObjectContainer::render();
+}
+
+
+float Stage::getMsPerFrame()
+{
+	return 1000 / frameRate;
 }
