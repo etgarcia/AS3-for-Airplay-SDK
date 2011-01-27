@@ -15,7 +15,12 @@ int main()
 		if	(s3eDeviceCheckQuitRequest()) break;
 		timer->update();
 	}
-	delete stage;
+	delete stage, timer;
 	Iw2DTerminate();
 	return 0;
+}
+
+void sendEvent(Stage* stage, Event evnt)
+{
+
 }

@@ -30,3 +30,9 @@ void DisplayObjectContainer::render()
 		children[i]->render();
 	}
 }
+
+void DisplayObjectContainer::passOnEvent(Event* evnt)
+{
+	for (uint32 i = 0; i < children.size(); i++)
+		children[i]->recieveEvent(evnt);
+}

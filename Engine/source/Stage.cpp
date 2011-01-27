@@ -1,9 +1,10 @@
 #include "Stage.h"
 
-void stageRender(Event evnt)
+void stageRender(Event* evnt)
 {
-	Stage* stage = (Stage*)evnt.stage;
-	stage->render();
+	EventDispatcher* stage = EventDispatcher::stage;
+	Stage* castStage = dynamic_cast<Stage*>(stage);
+	castStage->render();
 }
 
 Stage::Stage() :
@@ -20,6 +21,7 @@ Stage::~Stage(void)
 	for (uint32 i = 0; i < children.size(); i++)
 		delete children[i];
 	children.clear();
+	EventDispatcher::~EventDispatcher();
 }
 
 

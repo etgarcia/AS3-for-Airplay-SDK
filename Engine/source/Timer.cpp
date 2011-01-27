@@ -7,6 +7,7 @@ Timer::Timer(int32 delay, int32 repeatCount)
 
 Timer::~Timer(void)
 {
+	EventDispatcher::~EventDispatcher();
 }
 
 int64 Timer::realTime;
@@ -39,7 +40,9 @@ void Timer::update()
 			count++;
 			startTime = startTime + delay;
 			if (startTime < 0) startTime = 0;
-			// dispatchAnEvent
+			Event* evnt = new Event("timer");
+			stage->recieveEvent(evnt);
+			delete evnt;
 		}
 		else if (diff < 0)
 		{

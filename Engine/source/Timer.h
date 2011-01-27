@@ -1,5 +1,6 @@
 #pragma once
 #include "EventDispatcher.h"
+#include "Stage.h"
 
 class Timer :
 	public EventDispatcher

@@ -3,19 +3,22 @@
 #include "Iw2D.h"
 #include <vector>
 
+typedef void (*fptr)(Event*);
+
 class EventDispatcher
 {
 public:
 	EventDispatcher(void);
 	virtual ~EventDispatcher(void);
-	static void* stage;
-	void addEventListener(char* type, void (*listener)(Event), bool useCapture = false, bool useWeakReference = false);
+	static EventDispatcher* stage;
+	void addEventListener(char* type, fptr listener, bool useCapture = false, bool useWeakReference = false);
 	bool dispatchEvent(Event* evnt);
 	bool hasEventListener(char* type);
-	void removeEventListener(char* type, void (*listener)(Event), bool useCapture = false);
+	void removeEventListener(char* type, fptr listener, bool useCapture = false);
 	void recieveEvent(Event* evnt);
-private:
+	char* name;
+protected:
 	std::vector<Event*> events;
-	std::vector<void*> listeners;
+	std::vector<fptr> listeners;
 };
 
